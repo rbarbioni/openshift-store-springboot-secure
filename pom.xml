@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.com.rbarbioni</groupId>
 	<artifactId>store-boot-security</artifactId>
-	<!--<packaging>war</packaging>-->
+	<packaging>war</packaging>
 	<version>1.0.0</version>
 	<name>store-boot-security</name>
 
