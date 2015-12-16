@@ -2,6 +2,7 @@ package br.com.rbarbioni.store.controller;
 
 import java.util.List;
 
+import br.com.rbarbioni.store.Constants;
 import br.com.rbarbioni.store.repository.CustomerOrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -17,7 +18,7 @@ import br.com.rbarbioni.store.model.CustomerOrder;
  * Created by root on 10/12/15.
  */
 @RestController
-@RequestMapping(value="order", produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(value= Constants.API + "order", produces = MediaType.APPLICATION_JSON_VALUE)
 public class CustomerOrderController {
 	
 	@Autowired

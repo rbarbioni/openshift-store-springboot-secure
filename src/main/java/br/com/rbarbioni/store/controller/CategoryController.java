@@ -1,5 +1,6 @@
 package br.com.rbarbioni.store.controller;
 
+import br.com.rbarbioni.store.Constants;
 import br.com.rbarbioni.store.model.Category;
 import br.com.rbarbioni.store.repository.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +14,7 @@ import java.util.List;
  * Created by root on 10/12/15.
  */
 @RestController
-@RequestMapping(value="category", produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(value= Constants.API + "category", produces = MediaType.APPLICATION_JSON_VALUE)
 @Transactional
 public class CategoryController {
 	
@@ -38,7 +39,7 @@ public class CategoryController {
 			Category parent = null;
 
 			if (category.getParent().getUUID() != null ) {
-				 parent = (Category) categoryRepository.findByuUID( category.getParent().getUUID() );
+				 parent = (Category) categoryRepository.findByUUID( category.getParent().getUUID() );
 			}
 
 			if ( parent == null ){

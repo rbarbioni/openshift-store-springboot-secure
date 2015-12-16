@@ -2,8 +2,10 @@ package br.com.rbarbioni.store.controller;
 
 import java.util.List;
 
+import br.com.rbarbioni.store.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,12 +19,13 @@ import br.com.rbarbioni.store.repository.ProductRepository;
  * Created by root on 10/12/15.
  */
 @RestController
-@RequestMapping(value="product", produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(value= Constants.API + "product", produces = MediaType.APPLICATION_JSON_VALUE)
+
 public class ProductController {
 	
 	@Autowired
 	private ProductRepository productRepository;
-	
+
 	@RequestMapping(method=RequestMethod.GET)
 	public List<Product> findAll(){
 		return this.productRepository.findAll();

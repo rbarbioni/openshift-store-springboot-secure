@@ -12,5 +12,5 @@ import org.springframework.data.repository.NoRepositoryBean;
 public interface DomainRepository<T extends DomainEntity> extends JpaRepository<T, Long> {
 
     @Query("SELECT o FROM #{#entityName} o WHERE o.uuid=?1")
-    public DomainEntity findByuUID (String uuid);
+    public DomainEntity findByUUID (String uuid);
 }
