@@ -8,6 +8,7 @@ Features:
 -------
 
 * Spring 4.2.2;
+* Spring Security;
 * Spring Data JPA
 * No Spring XML configuration;
 * Persistence JPA 2;
