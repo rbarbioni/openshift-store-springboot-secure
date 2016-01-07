@@ -1,5 +1,5 @@
 
-INSERT INTO Account (id, active, creation_date, uuid, email, password, username) VALUES ('1', 1, '2015-01-01 15:22:40.997', '1', 'renan.barbioni@concrete.com.br', 'renan', 'rbarbioni');
+INSERT INTO Account (id, active, creation_date, uuid, email, password, username) VALUES ('1', 1, '2015-01-01 15:22:40.997', '1', 'admin@concrete.com.br', 'admin', 'admin');
 
 INSERT INTO Category (id, active, creation_date, uuid, name)             VALUES (1, 1, '2015-01-01 15:22:40.997', '1', 'Mobile');
 INSERT INTO Category (id, active, creation_date, uuid, name, parent_id)  VALUES (2, 1, '2015-01-01 15:22:40.997', '2', 'SmartPhone', 1);

@@ -30,20 +30,20 @@ Instructions
 Mysql Configurations
 -------
 
-Resources configuration
+Connect Mysql database
+Execute:
+CREATE SCHEMA api;
 
-application.properties is default Spring profiles and Openshift datasource configuration
-application-dev.properties is development configuration, change to your local mysql datasource configuration
+Open file application.properties
 
-Run Application Server in development mode
+change datasource configuration
 
-Add VM arguments or server startup arguments Spring profiles definitions
+spring.datasource.url=jdbc:mysql://localhost:3306/api?autoreconnect=true
+spring.datasource.username=YOUR_MYSQL_USER
+spring.datasource.password=YOUR_MYSQL_PASSWORD
 
--Dspring.profiles.active=dev
-
-Defaults is Openshift Spring Profile definitions, no profiles VM arguments data.
-
-
-
-
+Openshift
+-------
+commit -m "initial Commit"
+push -u origin master
 
