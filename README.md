@@ -43,6 +43,6 @@ spring.datasource.password=YOUR_MYSQL_PASSWORD
 
 Openshift
 -------
->commit -m "initial Commit"
->push -u origin master
+commit -m "initial Commit"
+push -u origin master
 
