@@ -37,9 +37,9 @@ CREATE SCHEMA api;
 Open file application.properties and change datasource configuration
 ---------------------
 
->spring.datasource.url=jdbc:mysql://localhost:3306/api?autoreconnect=true 
->spring.datasource.username=YOUR_MYSQL_USER 
->spring.datasource.password=YOUR_MYSQL_PASSWORD 
+spring.datasource.url=jdbc:mysql://localhost:3306/api?autoreconnect=true 
+spring.datasource.username=YOUR_MYSQL_USER 
+spring.datasource.password=YOUR_MYSQL_PASSWORD 
 
 Openshift
 -------
