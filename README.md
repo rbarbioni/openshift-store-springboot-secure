@@ -37,6 +37,7 @@ CREATE SCHEMA api;
 Open file application.properties
 
 change datasource configuration
+--
 
 spring.datasource.url=jdbc:mysql://localhost:3306/api?autoreconnect=true
 spring.datasource.username=YOUR_MYSQL_USER
